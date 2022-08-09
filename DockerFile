@@ -1,0 +1,5 @@
+FROM openjdk:11
+COPY src World
+RUN mkdir -p bin
+RUN javac -d bin ./com/myapp/Helo.java
+CMD ["java","com.myapp.Helo"] 
